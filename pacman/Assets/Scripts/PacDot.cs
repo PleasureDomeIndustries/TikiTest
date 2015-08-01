@@ -6,6 +6,10 @@ public class PacDot : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D co)
     {
         if (co.name == "pacman")
+        {
             Destroy(gameObject);
+            ScoreManager.score += 10;
+        }
+            
     }
 }
