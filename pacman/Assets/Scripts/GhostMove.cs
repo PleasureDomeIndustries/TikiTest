@@ -22,8 +22,8 @@ public class GhostMove : MonoBehaviour {
 
         // Animation
         Vector2 dir = waypoints[cur].position - transform.position;
-        GetComponent<Animator>().SetFloat("DirX", dir.x);
-        GetComponent<Animator>().SetFloat("DirY", dir.y);
+        GetComponent<Animator>().SetFloat("dirX", dir.x);
+        GetComponent<Animator>().SetFloat("dirY", dir.y);
     }
 
     void OnTriggerEnter2D(Collider2D co)
